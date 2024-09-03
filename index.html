@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MY PERSONAL PORTFOLIO WEBSITE">
+
+  <title>Portfolio : Preethika M</title>
+  <!-- favicon -->
+  <link rel="icon" href="assets/icons8-manual-100.png" type="image/x-icon" />
+
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <!-- css  -->
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- desktop nav  -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <a href="index.html">
+        PORTFOLIO
+      </a>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <!-- <li><a href="#form">Form</a></li> -->
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- hamburger menu  -->
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="index.html">
+      PORTFOLIO
+      </a>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span> </span>
+        <span> </span>
+        <span> </span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+        <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
+        <!-- <li><a href="#form" onclick="toggleMenu()">Form</a></li> -->
+        <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+      </div>
+    </div>
+  </nav>
+  <!-- profile section  -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/preethika1.jpg" style="border-radius: 50%" alt="Preethika Profile Picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hey, I'm</p>
+      <h1 class="title">M Preethika </h1>
+      <p class="section__text__p2">Software Engineer</p>
+      <div class="btn-contianer">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Preethika.Resume.pdf')">
+          Download my resume
+        </button>
+
+        <button class="btn btn-color-1 " onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+<img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" 
+     onclick="window.location.href='https://www.linkedin.com/in/preethikamanoj/'" />
+
+<img src="./assets/github.png" alt="My Github Profile" class="icon" 
+     onclick="window.location.href='https://github.com/preethikamanoj'" />
+
+      </div>
+    </div>
+  </section>
+  <!-- about section  -->
+  <section id="about">
+    <p class="section__text__p1">Get to know more</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      \
+      <div class="section__pic-container">
+        <img src="assets/p2.jpg" alt="Profile Picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Goal:</h3>
+            <p>To be a full stack developer</p>
+            <!-- <p>Expected salary package: 12LPA</p> -->
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education:</h3>
+            <p>
+              Bachelor of Technology <br />
+              Computer Science and Engineering
+            </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p style="color: black; font-size: 20px">
+            Welcome to my personal website! I'm M Preethika, a passionate and
+            driven individual with a deep-rooted love for technology and a
+            strong desire to become a Full Stack Developer.
+            <br /><br />
+            My primary career objective is to carve a path as a Full Stack
+            Developer by associating with dynamic environments that can
+            harness my knowledge and skills to their fullest potential. I
+            believe in fostering an environment of growth, both for the
+            organizations I work with and my personal development.
+            <br /><br />
+            I'm proficient in a range of programming languages such as Python,
+            HTML, C++, C, and SQL. My ability to work effectively in a team,
+            leadership skills, and proficiency in using Microsoft Office tools
+            contribute to my well-rounded skill set.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'  " />
+  </section>
+  <!-- experience section  -->
+  <section id="experience">
+    <p class="section__text__p1">Explore my</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <!-- front end development  -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Front end development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Javascript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Basics only</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- languages  -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Basics only</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- soft skills  -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Soft Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Problem Solving</h3>
+                <!-- <p>Experienced</p> -->
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Communication Skills</h3>
+                <!-- <p>Intermediate</p> -->
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Organizational Skills</h3>
+                <!-- <p>Intermediate</p> -->
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Responsibility</h3>
+                <!-- <p>Basics</p> -->
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Team Work</h3>
+                <!-- <p>Basics</p> -->
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- computer skills  -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Computer Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MS Word</h3>
+                <!-- <p>Experienced</p> -->
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MS Excel</h3>
+                <!-- <p>Intermediate</p> -->
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Powerpoint</h3>
+                <!-- <p>Intermediate</p> -->
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Editing</h3>
+                <!-- <p>Basics</p> -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'  " />
+  </section>
+  <!-- project section  -->
+  <section id="projects">
+    <p class="section__text__p1">Browse my recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <!-- youtube project  -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <p> Project-1</p>
+
+          <h2 class="experience-sub-title project-title">
+            Youtube Homepage Clone
+          </h2>
+          <div class="btn-contianer">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://abilashhhh.github.io/youtube-homepage/'">
+              Sample Live Demo
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/abilashhhh/youtube-homepage.git'">
+              Github Repository
+            </button> -->
+          </div>
+        </div>
+        <!-- paytm project  -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <p>Project-2</p>
+          <h2 class="experience-sub-title project-title">
+            Paytm Homepage Clone
+          </h2>
+          <div class="btn-contianer">
+
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://abilashhhh.github.io/paytm-homepage/'">
+              Sample Live Demo
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/abilashhhh/paytm-homepage.git'">
+              Github Repository
+            </button> -->
+
+
+
+          </div>
+        </div>
+        <!-- portfolio website project  -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/youtube2.jpg" alt="Project 3" class="project-img" />
+          </div>
+          <p>Project-3</p>
+          <h2 class="experience-sub-title project-title">
+            Youtube - Responsive<br />(Home page & video page)
+          </h2>
+          <div class="btn-contianer">
+
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://abilashhhh.github.io/Youtube-Responsive/'">
+              Sample Live Demo
+            </button>
+            <!-- <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/abilashhhh/youtube-homepage'">
+              Github Repository
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#education'  " />
+  </section>
+  <!-- education section  -->
+  <section id="education">
+    <p class="section__text__p1">About my</p>
+    <h1 class="title">Education</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <!-- college  -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            Bachelor of Technology Computer Science and Engineering
+          </h2>
+          <div class="article-container">
+            <img src="./assets/nehru-college-of-engineering-research-centre-thrissur-239386.jpg" alt="Project 1"
+              class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Nehru College of Engineering and Research Centre
+          </h2>
+          <div class="btn-contianer">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.ncerc.ac.in/'">
+              College Website
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://goo.gl/maps/am6e9sBWz7HtBfE3A'">
+              College Location
+            </button>
+          </div>
+        </div>
+        <!-- GHSS  -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">
+            XII Bio-Maths
+          </h2>
+          <div class="article-container">
+            <img src="./assets/jawahar2.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Jawahar CBSE School (CNN CAMPUS)
+          </h2>
+          <div class="btn-contianer">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://jawaharcbse.in/'">
+              School Website
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://maps.app.goo.gl/fuqnxGwEBjXisLpZA'">
+              School Location
+            </button>
+          </div>
+        </div>
+        <!-- BSS -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">X</h2>
+          <div class="article-container">
+            <img src="./assets/kv.jpg" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Kendriya Vidyalaya NLC Neyveli  
+          </h2>
+          <div class="btn-contianer">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://neyveli.kvs.ac.in/'">
+              School Website
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://maps.app.goo.gl/fuqnxGwEBjXisLpZA'">
+              School Location
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#gallery'" />
+  </section>
+  <!-- gallery  -->
+  <section id="gallery">
+    <p class="section__text__p1">My </p>
+    <h1 class="title">Certificates</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="certificates/luminar.jpg">
+                    <img src="certificates/luminar.jpg" alt="image" style="width:100%; border: 1px solid #000;">
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <a href="certificates/spectrum.jpg">
+                    <img src="certificates/spectrum.jpg" alt="image" style="width:100%; border: 1px solid #000;">
+                </a>
+            </div>
+        </div>
+        
+           
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#form'" /> -->
+
+  <!-- </section>
+  <section id="form">
+    <div class="form">
+      <form name="submit-to-google-sheet">
+        <h1>Fill out this form to get in touch with me.</h1>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+        <input type="email" id="email" name="email" placeholder="Your email id" required />
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number" required />
+        <textarea id="message" name="message" placeholder="How can I help you.." cols="10" rows="5"></textarea>
+        <button type="submit">Send</button>
+        <span id="success"></span>
+      </form>
+    </div> -->
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+  <!-- contacts  -->
+  <section id="contact">
+    <p class="section__text__p1">Get in touch</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="contact-info-upper-container">
+
+      <div class="contact-info-container" style="display: flex; align-items: center; gap: 1rem;">
+        <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+        <p>
+            <a href="mailto:preethika.m.nair24@gmail.com">Mail</a>
+        </p>
+    </div>
+    
+<!-- 
+      <div class="contact-info-container">
+        <img src="./assets/instagram.png" alt="Instagram Icon" class="icon contact-icon " />
+
+        <p>
+          <a href="https://instagram.com/abilash_._?utm_source=qr&igshid=YzU1NGVlODEzOA==">Instagram</a>
+        </p>
+        <span style="gap: 1rem;"></span>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/facebook.png" alt="Facebook Icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.facebook.com/profile.php?id=100080042061850&mibextid=ZbWKwL">Facebook</a>
+        </p>
+        <span style="gap: 1rem;"></span>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/whatsapp.png" alt="Whatsapp Icon" class="icon contact-icon email-icon" />
+
+        <p>
+          <a href="https://wa.me/qr/TC6M6UGJZFLYP1">Whatsapp</a>
+        </p>
+        <span style="gap: 1rem;"></span>
+      </div> -->
+
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="Github Icon" class="icon contact-icon" />
+        <p>
+          <a href="https://github.com/preethikamanoj">Github</a>
+        </p>
+        <span style="gap: 1rem;"></span>
+      </div>
+
+      <!-- <div class="contact-info-container">
+        <img src="./assets/youtube.png " style="border-radius: 50%;" alt="Youtube Icon" class="icon contact-icon" />
+        <p>
+          <a href="https://youtube.com/@abilashn.2962?si=1AqdgoCp6aXcxEdO">Youtube</a>
+        </p>
+        <span style="gap: 1rem;"></span>
+      </div> -->
+
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/preethikamanoj24">LinkedIn</a>
+        </p>
+        <span style="gap:1rem"></span>
+      </div>
+    </div>
+
+
+
+    </div>
+  </section>
+  <!-- footer  -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <!-- <li><a href="#form">Form</a></li> -->
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Personal Portfolio Website - M Preethika</p>
+  </footer>
+
+  <!-- javascript alertbox  -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- javascript  -->
+  <script src="scripts.js"></script>
+
+  <!-- bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
